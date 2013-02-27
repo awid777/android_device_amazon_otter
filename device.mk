@@ -28,5 +28,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/etc/mountd.conf:/system/etc/mountd.conf \
     $(DEVICE_FOLDER)/prebuilt/etc/vold.fstab:/system/etc/vold.fstab
 
+# Ubuntu-session fix
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/ubuntu-session:/system/etc/ubuntu-session \
+
 $(call inherit-product-if-exists, vendor/amazon/otter/otter-vendor.mk)
 
