@@ -26,8 +26,8 @@ BOARD_KERNEL_CMDLINE := mem=512M console=/dev/null
 TARGET_BOOTLOADER_BOARD_NAME := otter
 TARGET_OTA_ASSERT_DEVICE := blaze,otter
 BOARD_HAS_SDCARD_INTERNAL := true
-BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/platform/omap/omap_hsmmc.1/by-name/media
-BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/platform/omap/omap_hsmmc.1/by-name/media
+BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/platform/omap_hsmmc.1/by-name/media
+BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/platform/omap_hsmmc.1/by-name/media
 
 # Kernel Build
 TARGET_KERNEL_SOURCE := kernel/amazon/otter-common
