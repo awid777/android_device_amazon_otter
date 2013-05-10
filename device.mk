@@ -32,9 +32,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/init.omap4430.rc:/root/init.omap4430.rc \
     $(DEVICE_FOLDER)/init.omap4430.usb.rc:/root/init.omap4430.usb.rc
 
-# WLAN MAC fix script
+# MAC/SWAP scripts
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/bin/fix-mac.sh:/system/bin/fix-mac.sh \
+    $(DEVICE_FOLDER)/prebuilt/bin/swap-check.sh:/system/bin/swap-check.sh
 
 # Misc system/etc files
 PRODUCT_COPY_FILES += \

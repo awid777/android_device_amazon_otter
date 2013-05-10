@@ -207,6 +207,12 @@ on boot
     setprop status.battery.level_raw  50
     setprop status.battery.level_scale 9
 
+service swap-check /system/bin/swap-check.sh
+    class core
+    user root
+    group root
+    oneshot
+
 service fixmac /system/bin/fix-mac.sh
     class core
     user root
