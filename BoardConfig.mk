@@ -22,7 +22,7 @@ DEVICE_FOLDER := device/amazon/otter
 
 # Kernel
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_CMDLINE := mem=512M console=null vmalloc=440M omapfb.fb_opt=-1,-1,-1,1,1024,600
+BOARD_KERNEL_CMDLINE := mem=512M console=/dev/null vmalloc=440M omapfb.fb_opt=-1,-1,-1,1,1024,600 omap-cpufreq.safe_suspend_freq=600000000
 TARGET_BOOTLOADER_BOARD_NAME := otter
 TARGET_OTA_ASSERT_DEVICE := blaze,otter
 BOARD_HAS_SDCARD_INTERNAL := true
