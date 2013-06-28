@@ -36,12 +36,15 @@ PRODUCT_COPY_FILES += \
 # MAC/SWAP scripts
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/bin/fix-mac.sh:/system/bin/fix-mac.sh \
-    $(DEVICE_FOLDER)/prebuilt/bin/swap-check.sh:/system/bin/swap-check.sh
+    $(DEVICE_FOLDER)/prebuilt/bin/swap-check.sh:/system/bin/swap-check.sh \
+    $(DEVICE_FOLDER)/prebuilt/bin/idme:/system/bin/idme
 
-# Misc system/etc files
+# Prebuilt system/etc
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/etc/mountd.conf:/system/etc/mountd.conf \
     $(DEVICE_FOLDER)/prebuilt/etc/vold.fstab:/system/etc/vold.fstab
 
-$(call inherit-product-if-exists, vendor/amazon/otter/otter-vendor.mk)
+# Prebuilt system/lib
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/prebuilt/lib/libidme.so:/system/lib/libidme.so
 
