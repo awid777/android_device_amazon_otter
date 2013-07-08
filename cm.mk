@@ -23,3 +23,7 @@ PRODUCT_RELEASE_NAME := KFire
 PRODUCT_BRAND := Android
 PRODUCT_MANUFACTURER := Amazon
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=awidawad \
+    ro.goo.rom=cm_$(TARGET_PRODUCT) \
+    ro.goo.version=$(shell date +%s)
