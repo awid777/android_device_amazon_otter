@@ -33,16 +33,23 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/init.omap4430.rc:/root/init.omap4430.rc \
     $(DEVICE_FOLDER)/init.omap4430.usb.rc:/root/init.omap4430.usb.rc
 
+<<<<<<< HEAD
 # MAC/SWAP scripts
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/bin/fix-mac.sh:/system/bin/fix-mac.sh \
     $(DEVICE_FOLDER)/prebuilt/bin/swap-check.sh:/system/bin/swap-check.sh \
+=======
+# Prebuilt system/bin
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/prebuilt/bin/fix-mac.sh:/system/bin/fix-mac.sh \
+>>>>>>> origin/cm-10.1
     $(DEVICE_FOLDER)/prebuilt/bin/idme:/system/bin/idme
 
 # Prebuilt system/etc
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/etc/mountd.conf:/system/etc/mountd.conf \
-    $(DEVICE_FOLDER)/prebuilt/etc/vold.fstab:/system/etc/vold.fstab
+    $(DEVICE_FOLDER)/prebuilt/etc/vold.fstab:/system/etc/vold.fstab \
+    $(DEVICE_FOLDER)/prebuilt/etc/firmware/ducati-m3.512MB.bin:/system/etc/firmware/ducati-m3.512MB.bin
 
 # Prebuilt system/lib
 PRODUCT_COPY_FILES += \

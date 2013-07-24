@@ -25,5 +25,9 @@ PRODUCT_MANUFACTURER := Amazon
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=awidawad \
+<<<<<<< HEAD
     ro.goo.rom=cm_$(TARGET_PRODUCT) \
+=======
+    ro.goo.rom=cm_$(TARGET_PRODUCT)-JellyBeer-NIGHTLIES \
+>>>>>>> origin/cm-10.1
     ro.goo.version=$(shell date +%s)
