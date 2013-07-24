@@ -28,6 +28,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 <<<<<<< HEAD
     ro.goo.rom=cm_$(TARGET_PRODUCT) \
 =======
-    ro.goo.rom=cm_$(TARGET_PRODUCT)-JellyBeer-NIGHTLIES \
->>>>>>> origin/cm-10.1
+    ro.goo.rom=cm_$(TARGET_PRODUCT)-TheWadStuff-NIGHTLIES \
+>>>>>>> origin/cm-10.2
     ro.goo.version=$(shell date +%s)
